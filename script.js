@@ -7,20 +7,19 @@ const languageReplies = {
         <p>Nếu quý khách có thêm câu hỏi hoặc cần sự hỗ trợ, đừng ngần ngại <a href="mailto:support@gigabank.jp">liên hệ với chúng tôi qua email này</a> hoặc phần <strong class="reason"> Chat để nhận hỗ trợ</strong> trong ứng dụng.</p>
         `,
         "residentCard6MonthsExpired": `
-        <p class="email-text">Cảm ơn quý khách đã sử dụng dịch vụ của chúng tôi. Chúng tôi đã nhận được đơn đăng ký của quý khách, nhưng <strong class="reason">thẻ cư trú của quý khách còn hạn dưới 6 tháng.</strong> Quý khách vui lòng gia hạn thẻ cư trú mới khi tạo tài khoản.</p>
+        <p class="email-text">Thẻ cư trú của quý khách còn hạn dưới 6 tháng.</strong> Quý khách vui lòng gia hạn thẻ cư trú mới khi tạo tài khoản.</p>
         <p>Nếu quý khách có thêm câu hỏi hoặc cần sự hỗ trợ, đừng ngần ngại <a href="mailto:support@gigabank.jp">liên hệ với chúng tôi qua email này</a> hoặc phần <strong class="reason"> Chat để nhận hỗ trợ</strong> trong ứng dụng.</p>
         `,
         "missingKatakana": `
-            <p>Quý khách chưa nhập tên Katakana. Tên Katakana của quý khách sẽ dùng để viết trên thẻ rút tiền của quý khách. Quý khách cần cập nhật lại trên ứng dụng
+            <p>Quý khách chưa nhập tên Katakana. Tên Katakana của quý khách sẽ dùng để viết trên thẻ rút tiền của quý khách. 
             </p>
         `,
         "no": `
-        
             <p>
             </p>
         `,
         "scanID": `
-        <p>ảnh thẻ cư trú đã cung cấp không đủ rõ ràng nên quý khách cần cập nhật ảnh chụp mới trên ứng dụng</p>
+        <p>Ảnh thẻ cư trú đã cung cấp không đủ rõ ràng.</p>
     `,
         "general": `
             <h2>Dear {name},</h2>
