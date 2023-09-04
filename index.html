@@ -9,20 +9,69 @@
         <h1>Auto Reply Generator</h1>
         <label for="language">Language:</label>
         <select id="language">
-            <option value="en">English</option>
             <option value="vn">Vietnamese</option>
+            <option value="en">English</option>
             <option value="fr">French</option>
         </select>
-        <label for="customerNote">Customer Note:</label>
-        <input type="text" id="customerNote" placeholder="Enter Customer Name">
+        <br/>
+
         <label for="issueType">Issue Type:</label>
+        <select id="issueType">
+            <option value="residentCard6MonthsExpired">Resident card 6 months expired</option>
+            <option value="missingKatakana">Missing Katakana</option>
+            <option value="scanID">scanID</option>
+        </select>
+        <br/>
+
+        <label for="issueType2">Issue Type:</label>
+        <select id="issueType2">
+            <option value="no">No</option>
+            <option value="residentCard6MonthsExpired">Resident card 6 months expired</option>
+            <option value="missingKatakana">Missing Katakana</option>
+            <option value="scanID">scanID</option>
+        </select>
+        <br/>
+
+        <!-- <label for="issueType">Issue Type:</label>
         <select id="issueType">
             <option value="residentCard6MonthsExpired">Resident card 6 months expired</option>
             <option value="technical">Technical</option>
             <option value="general">General</option>
-        </select>
+        </select> -->
+        <br/>
+        <!-- <label for="issueType">Issue Type:</label>
+        <select id="issueType">
+            <option value="residentCard6MonthsExpired">Resident card 6 months expired</option>
+            <option value="technical">Technical</option>
+            <option value="general">General</option>
+        </select> -->
+
+        <br/>
+
+        <label for="customerNote1">Customer Note:</label>
+        <input type="text" id="customerNote1" placeholder="Enter Customer Note 1">
+        <br/>
+        <label for="customerNote1">Customer Note:</label>
+        <input type="text" id="customerNote2" placeholder="Enter Customer Note 2">
+        <br/>
+
+        <label for="customerNote1">Customer Note:</label>
+        <input type="text" id="customerNote3" placeholder="Enter Customer Note 3">
+        <br/>
+
+        <label for="customerNote1">Customer Note:</label>
+        <input type="text" id="customerNote4" placeholder="Enter Customer Note 4">
+        
         <button onclick="generateReply()">Generate Reply</button>
+        <h2>Subject: GIG-A Cập Nhật Thông Tin</h2>
+        <p>Kính chào quý khách,</p>
         <div id="replyText" class="reply-area"></div>
+        <div id="replyText2" class="reply-area"></div>
+
+        <div class="signature">
+            <h3>Trân trọng,</h3>
+            <p>GIG-A- Đội ngũ chăm sóc khách hàng</p>
+            </div>
     </div>
 </body>
 <script src="script.js"></script>
