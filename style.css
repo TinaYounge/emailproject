@@ -1,0 +1,27 @@
+/* body {
+    font-family: Arial, sans-serif;
+} */
+.email-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+.email-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.email-text {
+    line-height: 1.6;
+}
+.email-link {
+    color: blue;
+    text-decoration: underline;
+}
+.highlight {
+    background-color: #fff3cd;
+    padding: 3px;
+    font-weight: bold;
+}

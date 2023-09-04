@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi-Language Auto Reply Generator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Auto Reply Generator</h1>
+        <label for="language">Language:</label>
+        <select id="language">
+            <option value="en">English</option>
+            <option value="vn">Vietnamese</option>
+            <option value="fr">French</option>
+        </select>
+        <label for="customerNote">Customer Note:</label>
+        <input type="text" id="customerNote" placeholder="Enter Customer Name">
+        <label for="issueType">Issue Type:</label>
+        <select id="issueType">
+            <option value="residentCard6MonthsExpired">Resident card 6 months expired</option>
+            <option value="technical">Technical</option>
+            <option value="general">General</option>
+        </select>
+        <button onclick="generateReply()">Generate Reply</button>
+        <div id="replyText" class="reply-area"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
