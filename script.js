@@ -64,6 +64,9 @@ function generateReply() {
   const issueType3 = document.getElementById("issueType3").value;
   const issueType4 = document.getElementById("issueType4").value;
   const faq1 = document.getElementById("faq1").value;
+  const faq2 = document.getElementById("faq2").value;
+  const faq3 = document.getElementById("faq3").value;
+
   const showFAQ = document.getElementById("faq1").value;
 
   const language = document.getElementById("language").value;
@@ -71,6 +74,10 @@ function generateReply() {
   let replyText2 = "";
   let replyText3 = "";
   let replyText4 = "";
+  let replyTextFAQ1 = "";
+  let replyTextFAQ2 = "";
+  let replyTextFAQ3 = "";
+
 
   if (showFAQ === "no") {
     replyshowFAQ = "";
@@ -84,12 +91,16 @@ function generateReply() {
   const template3 = languageReplies[language][issueType3];
   const template4 = languageReplies[language][issueType4];
   const templatefaq1 = languageReplies[language][faq1];
+  const templatefaq2 = languageReplies[language][faq2];
+  const templatefaq3 = languageReplies[language][faq3];
 
   replyText = template.replace("{name}", customerNote1);
   replyText2 = template2;
   replyText3 = template3;
   replyText4 = template4;
   replyTextFAQ1 = templatefaq1;
+  replyTextFAQ2 = templatefaq2;
+  replyTextFAQ3 = templatefaq3;
 
   document.getElementById("replyshowFAQ").innerHTML = replyshowFAQ; // Changed to innerHTML to support HTML tags
 
@@ -98,5 +109,7 @@ function generateReply() {
   document.getElementById("replyText3").innerHTML = replyText3; // Changed to innerHTML to support HTML tags
   document.getElementById("replyText4").innerHTML = replyText4; // Changed to innerHTML to support HTML tags
   document.getElementById("replyTextFAQ1").innerHTML = replyTextFAQ1; // Changed to innerHTML to support HTML tags
-  document.getElementById("replyTextFAQ1").innerHTML = replyTextFAQ1; // Changed to innerHTML to support HTML tags
+  document.getElementById("replyTextFAQ2").innerHTML = replyTextFAQ2; // Changed to innerHTML to support HTML tags
+  document.getElementById("replyTextFAQ3").innerHTML = replyTextFAQ3; // Changed to innerHTML to support HTML tags
+
 }
