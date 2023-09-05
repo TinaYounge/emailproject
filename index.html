@@ -31,7 +31,17 @@
         <option value="fr">French</option>
       </select>
       <br />
+      <label for="emailType">Email type:</label>
+      <select id="emailType">
+        <option value="reApply">ReApply</option>
 
+        <option value="congratHowToUseGIG-AApp">Congrat & How to Use GIG-A app</option>
+        <option value="congratHowToActiveGIG-AApp">Congrat & How to Active GIG-A app</option>
+        <option value="not6Months">Not enought 6 month</option>
+        <option value="noOpen">No Support Open</option>
+
+      </select>
+      <br />
       <label for="issueType">Issue Type:</label>
       <select id="issueType">
         <option value="no">No</option>
@@ -243,9 +253,14 @@
       <br />
 
       <button onclick="generateReply()">Generate Reply</button>
-      <h2 style="color: #4c1fa6; font-size: 24px; margin-bottom: 10px">
+      <!-- <h2 style="color: #4c1fa6; font-size: 24px; margin-bottom: 10px">
         Subject: GIG-A Cập Nhật Thông Tin Đơn Đăng Ký
-      </h2>
+      </h2> -->
+      <h2
+      id="replyemailType"
+      class="reply-area"
+      style="color: #4c1fa6; font-size: 24px; margin-bottom: 10px"
+    ></h2>
       <br />
       <h1 style="color: #4c1fa6; font-size: 24px; margin-bottom: 10px">
         Kính chào quý khách,

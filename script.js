@@ -66,6 +66,7 @@ function generateReply() {
   const faq1 = document.getElementById("faq1").value;
   const faq2 = document.getElementById("faq2").value;
   const faq3 = document.getElementById("faq3").value;
+  const emailType = document.getElementById("emailType").value;
 
   const showFAQ = document.getElementById("faq1").value;
 
@@ -77,7 +78,7 @@ function generateReply() {
   let replyTextFAQ1 = "";
   let replyTextFAQ2 = "";
   let replyTextFAQ3 = "";
-
+  let replyemailType = "";
 
   if (showFAQ === "no") {
     replyshowFAQ = "";
@@ -86,6 +87,38 @@ function generateReply() {
       "*Quý khách có thể tham khảo cách nộp lại đơn qua bài viết dưới đây";
   }
 
+  // if (emailType === "reApply") {
+  //   replyemailType = "Subject: GIG-A Cập Nhật Thông Tin Đơn Đăng Ký";
+  // } else {
+  //   if (emailType === "congratHowToActiveGIG-AApp") {
+  //     replyemailType = "Subject: congratHowToUseGIG";
+  //   } else {
+  //     replyemailType = "lol";
+  //   }
+  // }
+
+  switch(emailType) {
+    case "reApply":
+      replyemailType = "Subject: GIG-A Cập Nhật Thông Tin Đơn Đăng Ký";
+      break;
+    case "congratHowToActiveGIG-AApp":
+      replyemailType = "Subject: GIG-A- Chúc Mừng và Thông Báo Kích Hoạt Tài khoản      ";
+      break;
+    case "congratHowToUseGIG-AApp":
+      replyemailType = "Subject: congratHowToUseGIG-AApp";
+      break;
+      case "not6Months":
+      replyemailType = "Subject: GIG-A Cập nhật- Thẻ cư trú dưới 6 tháng hết hạn";
+      break;
+      case "noOpen":
+        replyemailType = "Subject: noOpen";
+        break;
+    default:
+      replyemailType = "Please choose Email Type";
+      break;
+  }
+  
+
   const template = languageReplies[language][issueType];
   const template2 = languageReplies[language][issueType2];
   const template3 = languageReplies[language][issueType3];
@@ -93,6 +126,7 @@ function generateReply() {
   const templatefaq1 = languageReplies[language][faq1];
   const templatefaq2 = languageReplies[language][faq2];
   const templatefaq3 = languageReplies[language][faq3];
+  // const templateemailType = languageReplies[language][emailType];
 
   replyText = template.replace("{name}", customerNote1);
   replyText2 = template2;
@@ -101,8 +135,10 @@ function generateReply() {
   replyTextFAQ1 = templatefaq1;
   replyTextFAQ2 = templatefaq2;
   replyTextFAQ3 = templatefaq3;
+  // replyemailType = templateemailType;
 
   document.getElementById("replyshowFAQ").innerHTML = replyshowFAQ; // Changed to innerHTML to support HTML tags
+  document.getElementById("replyemailType").innerHTML = replyemailType; // Changed to innerHTML to support HTML tags
 
   document.getElementById("replyText").innerHTML = replyText; // Changed to innerHTML to support HTML tags
   document.getElementById("replyText2").innerHTML = replyText2; // Changed to innerHTML to support HTML tags
@@ -111,5 +147,4 @@ function generateReply() {
   document.getElementById("replyTextFAQ1").innerHTML = replyTextFAQ1; // Changed to innerHTML to support HTML tags
   document.getElementById("replyTextFAQ2").innerHTML = replyTextFAQ2; // Changed to innerHTML to support HTML tags
   document.getElementById("replyTextFAQ3").innerHTML = replyTextFAQ3; // Changed to innerHTML to support HTML tags
-
 }
