@@ -25,3 +25,17 @@
     padding: 3px;
     font-weight: bold;
 }
+.sentence {
+    text-indent: 2em; /* Indentation */
+    position: relative;
+  }
+  
+  .sentence::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: -1.5em; /* Adjust the position */
+  }
+  
+  
