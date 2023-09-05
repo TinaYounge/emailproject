@@ -1,164 +1,286 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Multi-Language Auto Reply Generator</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-    <body style="font-family: Arial, sans-serif; margin: 20px; padding: 20px; background-color: #f7f7f7;">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body
+    style="
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 20px;
+      background-color: #f7f7f7;
+    "
+  >
+    <div
+      style="
+        max-width: 600px;
+        background: #ffffff;
+        margin: auto;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <!-- <div class=""> -->
+      <h1>Auto Reply Generator</h1>
+      <label for="language">Language:</label>
+      <select id="language">
+        <option value="vn">Vietnamese</option>
+        <option value="en">English</option>
+        <option value="fr">French</option>
+      </select>
+      <br />
 
-        <div style="max-width: 600px; background: #ffffff; margin: auto; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-    
-    <!-- <div class=""> -->
-        <h1>Auto Reply Generator</h1>
-        <label for="language">Language:</label>
-        <select id="language">
-            <option value="vn">Vietnamese</option>
-            <option value="en">English</option>
-            <option value="fr">French</option>
-        </select>
-        <br/>
+      <label for="issueType">Issue Type:</label>
+      <select id="issueType">
+        <option value="no">No</option>
 
-        <label for="issueType">Issue Type:</label>
-        <select id="issueType">
-            <option value="no">No</option>
+        <option value="partialAddressInput">Partial Address Input</option>
+        <option value="partialRomajiNameInput">
+          Partial Romaji Name Input
+        </option>
+        <option value="repeatedNameInput">Repeated Name Input</option>
+        <option value="unableToVerifyThicknessOfID">
+          Unable to verify thickness of ID
+        </option>
+        <option value="foreignerUsedMyNumberCardToApply">
+          Foreigner used My Number Card to apply
+        </option>
+        <option value="unclearImageOfID">Unclear image of ID</option>
+        <option value="somethingCoveringOfficialStampOnID">
+          Somthing covering official stamp on ID
+        </option>
+        <option value="partialAddressMismatch">Partial address mismatch</option>
+        <option value="addressInputInRomaji">Address input in Romaji</option>
+        <option value="partialRepeatedNameInput">
+          Partial repeated name input
+        </option>
+        <option value="partialBuildingNameMismatch">
+          Building name mismatch
+        </option>
+        <option value="birthdayMismatch">birthday mismatch</option>
+        <option value="partialKatakanaNameInput">
+          Partial katakana name input
+        </option>
+        <option value="roomNumberMismatch">Room Number Mismatch</option>
+        <option value="addressMismatch">Address mismatch</option>
+        <option value="eyesClosedInSelfie">Eyes closed in selfie</option>
+        <option value="missingCompanyName">Missing Company Name</option>
+      </select>
+      <br />
 
-            <option value="partialAddressInput">Partial Address Input</option>
-            <option value="partialRomajiNameInput">Partial Romaji Name Input</option>
-            <option value="repeatedNameInput">Repeated Name Input</option>
-            <option value="unableToVerifyThicknessOfID">Unable to verify thickness of ID</option>
-            <option value="foreignerUsedMyNumberCardToApply">Foreigner used My Number Card to apply</option>
-            <option value="unclearImageOfID">Unclear image of ID</option>
-            <option value="somethingCoveringOfficialStampOnID">Somthing covering official stamp on ID</option>
-            <option value="partialAddressMismatch">Partial address mismatch</option>
-            <option value="addressInputInRomaji">Address input in Romaji</option>
-            <option value="partialRepeatedNameInput">Partial repeated name input</option>
-            <option value="partialBuildingNameMismatch">Building name mismatch</option>
-            <option value="birthdayMismatch">birthday mismatch</option>
-            <option value="partialKatakanaNameInput">Partial katakana name input</option>
-            <option value="roomNumberMismatch">Room Number Mismatch</option>
-            <option value="addressMismatch">Address mismatch</option>
-            <option value="eyesClosedInSelfie">Eyes closed in selfie</option>
-            <option value="missingCompanyName">Missing Company Name</option>
+      <label for="issueType2">Issue Type2:</label>
+      <select id="issueType2">
+        <option value="no">No</option>
 
-        </select>
-        <br/>
+        <option value="partialAddressInput">Partial Address Input</option>
+        <option value="partialRomajiNameInput">
+          Partial Romaji Name Input
+        </option>
+        <option value="repeatedNameInput">Repeated Name Input</option>
+        <option value="unableToVerifyThicknessOfID">
+          Unable to verify thickness of ID
+        </option>
+        <option value="foreignerUsedMyNumberCardToApply">
+          Foreigner used My Number Card to apply
+        </option>
+        <option value="unclearImageOfID">Unclear image of ID</option>
+        <option value="somethingCoveringOfficialStampOnID">
+          Somthing covering official stamp on ID
+        </option>
+        <option value="partialAddressMismatch">Partial address mismatch</option>
+        <option value="addressInputInRomaji">Address input in Romaji</option>
+        <option value="partialRepeatedNameInput">
+          Partial repeated name input
+        </option>
+        <option value="partialBuildingNameMismatch">
+          Building name mismatch
+        </option>
+        <option value="birthdayMismatch">birthday mismatch</option>
+        <option value="partialKatakanaNameInput">
+          Partial katakana name input
+        </option>
+        <option value="roomNumberMismatch">Room Number Mismatch</option>
+        <option value="addressMismatch">Address mismatch</option>
+        <option value="eyesClosedInSelfie">Eyes closed in selfie</option>
+        <option value="missingCompanyName">Missing Company Name</option>
+      </select>
+      <br />
 
-        <label for="issueType2">Issue Type2:</label>
-        <select id="issueType2">
-            <option value="no">No</option>
+      <label for="issueType3">Issue Type3:</label>
+      <select id="issueType3">
+        <option value="no">No</option>
 
-            <option value="partialAddressInput">Partial Address Input</option>
-<option value="partialRomajiNameInput">Partial Romaji Name Input</option>
-<option value="repeatedNameInput">Repeated Name Input</option>
-<option value="unableToVerifyThicknessOfID">Unable to verify thickness of ID</option>
-<option value="foreignerUsedMyNumberCardToApply">Foreigner used My Number Card to apply</option>
-<option value="unclearImageOfID">Unclear image of ID</option>
-<option value="somethingCoveringOfficialStampOnID">Somthing covering official stamp on ID</option>
-<option value="partialAddressMismatch">Partial address mismatch</option>
-<option value="addressInputInRomaji">Address input in Romaji</option>
-<option value="partialRepeatedNameInput">Partial repeated name input</option>
-<option value="partialBuildingNameMismatch">Building name mismatch</option>
-<option value="birthdayMismatch">birthday mismatch</option>
-<option value="partialKatakanaNameInput">Partial katakana name input</option>
-<option value="roomNumberMismatch">Room Number Mismatch</option>
-<option value="addressMismatch">Address mismatch</option>
-<option value="eyesClosedInSelfie">Eyes closed in selfie</option>
-<option value="missingCompanyName">Missing Company Name</option>
+        <option value="partialAddressInput">Partial Address Input</option>
+        <option value="partialRomajiNameInput">
+          Partial Romaji Name Input
+        </option>
+        <option value="repeatedNameInput">Repeated Name Input</option>
+        <option value="unableToVerifyThicknessOfID">
+          Unable to verify thickness of ID
+        </option>
+        <option value="foreignerUsedMyNumberCardToApply">
+          Foreigner used My Number Card to apply
+        </option>
+        <option value="unclearImageOfID">Unclear image of ID</option>
+        <option value="somethingCoveringOfficialStampOnID">
+          Somthing covering official stamp on ID
+        </option>
+        <option value="partialAddressMismatch">Partial address mismatch</option>
+        <option value="addressInputInRomaji">Address input in Romaji</option>
+        <option value="partialRepeatedNameInput">
+          Partial repeated name input
+        </option>
+        <option value="partialBuildingNameMismatch">
+          Building name mismatch
+        </option>
+        <option value="birthdayMismatch">birthday mismatch</option>
+        <option value="partialKatakanaNameInput">
+          Partial katakana name input
+        </option>
+        <option value="roomNumberMismatch">Room Number Mismatch</option>
+        <option value="addressMismatch">Address mismatch</option>
+        <option value="eyesClosedInSelfie">Eyes closed in selfie</option>
+        <option value="missingCompanyName">Missing Company Name</option>
+      </select>
+      <br />
+      <label for="issueType4">Issue Type4:</label>
+      <select id="issueType4">
+        <option value="no">No</option>
 
+        <option value="partialAddressInput">Partial Address Input</option>
+        <option value="partialRomajiNameInput">
+          Partial Romaji Name Input
+        </option>
+        <option value="repeatedNameInput">Repeated Name Input</option>
+        <option value="unableToVerifyThicknessOfID">
+          Unable to verify thickness of ID
+        </option>
+        <option value="foreignerUsedMyNumberCardToApply">
+          Foreigner used My Number Card to apply
+        </option>
+        <option value="unclearImageOfID">Unclear image of ID</option>
+        <option value="somethingCoveringOfficialStampOnID">
+          Somthing covering official stamp on ID
+        </option>
+        <option value="partialAddressMismatch">Partial address mismatch</option>
+        <option value="addressInputInRomaji">Address input in Romaji</option>
+        <option value="partialRepeatedNameInput">
+          Partial repeated name input
+        </option>
+        <option value="partialBuildingNameMismatch">
+          Building name mismatch
+        </option>
+        <option value="birthdayMismatch">birthday mismatch</option>
+        <option value="partialKatakanaNameInput">
+          Partial katakana name input
+        </option>
+        <option value="roomNumberMismatch">Room Number Mismatch</option>
+        <option value="addressMismatch">Address mismatch</option>
+        <option value="eyesClosedInSelfie">Eyes closed in selfie</option>
+        <option value="missingCompanyName">Missing Company Name</option>
+      </select>
+      <br />
 
-        </select>
-        <br/>
+      <label for="customerNote1">Customer Note:</label>
+      <input
+        type="text"
+        id="customerNote1"
+        placeholder="Enter Customer Note 1"
+      />
+      <br />
+      <label for="faq1">Faq1:</label>
+      <select id="faq1">
+        <option value="no">No</option>
 
-        <label for="issueType3">Issue Type3:</label>
-        <select id="issueType3">
-            <option value="no">No</option>
+        <option value="howDoIChangeTheGIGAAppLanguage">
+          How do I change the GIG-A app language
+        </option>
+        <option value="howDoTakeFacePicture">How do take face picture</option>
+        <option value="takingPhotosForTheIdentityVerificationProcess">
+          Taking photos for the identity verification process
+        </option>
+        <option value="inputDddressInTheGIGAAp">
+          How to input my address in the GIG-A app?
+        </option>
+      </select>
 
-            <option value="partialAddressInput">Partial Address Input</option>
-            <option value="partialRomajiNameInput">Partial Romaji Name Input</option>
-            <option value="repeatedNameInput">Repeated Name Input</option>
-            <option value="unableToVerifyThicknessOfID">Unable to verify thickness of ID</option>
-            <option value="foreignerUsedMyNumberCardToApply">Foreigner used My Number Card to apply</option>
-            <option value="unclearImageOfID">Unclear image of ID</option>
-            <option value="somethingCoveringOfficialStampOnID">Somthing covering official stamp on ID</option>
-            <option value="partialAddressMismatch">Partial address mismatch</option>
-            <option value="addressInputInRomaji">Address input in Romaji</option>
-            <option value="partialRepeatedNameInput">Partial repeated name input</option>
-            <option value="partialBuildingNameMismatch">Building name mismatch</option>
-            <option value="birthdayMismatch">birthday mismatch</option>
-            <option value="partialKatakanaNameInput">Partial katakana name input</option>
-            <option value="roomNumberMismatch">Room Number Mismatch</option>
-            <option value="addressMismatch">Address mismatch</option>
-            <option value="eyesClosedInSelfie">Eyes closed in selfie</option>
-            <option value="missingCompanyName">Missing Company Name</option>
+      <br />
 
-        </select>
-        <br/>
-        <label for="issueType4">Issue Type4:</label>
-        <select id="issueType4">
-            <option value="no">No</option>
-
-            <option value="partialAddressInput">Partial Address Input</option>
-            <option value="partialRomajiNameInput">Partial Romaji Name Input</option>
-            <option value="repeatedNameInput">Repeated Name Input</option>
-            <option value="unableToVerifyThicknessOfID">Unable to verify thickness of ID</option>
-            <option value="foreignerUsedMyNumberCardToApply">Foreigner used My Number Card to apply</option>
-            <option value="unclearImageOfID">Unclear image of ID</option>
-            <option value="somethingCoveringOfficialStampOnID">Somthing covering official stamp on ID</option>
-            <option value="partialAddressMismatch">Partial address mismatch</option>
-            <option value="addressInputInRomaji">Address input in Romaji</option>
-            <option value="partialRepeatedNameInput">Partial repeated name input</option>
-            <option value="partialBuildingNameMismatch">Building name mismatch</option>
-            <option value="birthdayMismatch">birthday mismatch</option>
-            <option value="partialKatakanaNameInput">Partial katakana name input</option>
-            <option value="roomNumberMismatch">Room Number Mismatch</option>
-            <option value="addressMismatch">Address mismatch</option>
-            <option value="eyesClosedInSelfie">Eyes closed in selfie</option>
-            <option value="missingCompanyName">Missing Company Name</option>
-
-        </select>
-        <br/>
-
-        <label for="customerNote1">Customer Note:</label>
-        <input type="text" id="customerNote1" placeholder="Enter Customer Note 1">
-        <br/>
-        <label for="faq1">Faq1:</label>
-        <select id="faq1">
-            
-            <option value="howDoIChangeTheGIGAAppLanguage">How do I change the GIG-A app language</option>
-            <option value="howDoTakeFacePicture">How do take face picture </option>
-            <option value="takingPhotosForTheIdentityVerificationProcess">Taking photos for the identity verification process</option>
-            <option value="inputDddressInTheGIGAAp">How to input my address in the GIG-A app?</option>
-
-        </select>
-       
-        <br/>
-
-        <button onclick="generateReply()">Generate Reply</button>
-        <h2 style="color: #4c1fa6; font-size: 24px; margin-bottom: 10px">Subject: GIG-A Cập Nhật Thông Tin Đơn Đăng Ký</h2>
-        <br/>
-        <h1 style="color: #333366; font-size: 24px; margin-bottom: 10px;">Kính chào quý khách,</h1>
-        <p style="font-size: 16px; line-height: 1.5; color: #333;">Cảm ơn quý khách đã sử dụng dịch vụ của <a href="https://gigabank.jp/" style="color: #4c1fa6; text-decoration: none;font-weight: bold;">GIG-A</a>. Chúng tôi đã nhận được đơn đăng ký của quý khách, tuy nhiên chúng tôi cần quý khách nộp lại đơn do:</p>
-<div style="margin: 10px 0 20px 20px; font-size: 16px; line-height: 1.5; color: #333;">
-
-        <div id="replyText" class="list-item"></div>
+      <button onclick="generateReply()">Generate Reply</button>
+      <h2 style="color: #4c1fa6; font-size: 24px; margin-bottom: 10px">
+        Subject: GIG-A Cập Nhật Thông Tin Đơn Đăng Ký
+      </h2>
+      <br />
+      <h1 style="color: #4c1fa6; font-size: 24px; margin-bottom: 10px">
+        Kính chào quý khách,
+      </h1>
+      <p>
+        Cảm ơn quý khách đã sử dụng dịch vụ của
+        <a
+          href="https://gigabank.jp/"
+          style="color: #4c1fa6; text-decoration: none; font-weight: bold"
+          >GIG-A</a
+        >. Chúng tôi đã nhận được đơn đăng ký của quý khách, tuy nhiên chúng tôi
+        cần quý khách nộp lại đơn do:
+      </p>
+      <div
+        style="
+          margin: 10px 0 20px 20px;
+          font-size: 16px;
+          line-height: 1.5;
+          color: #333;
+        "
+      >
+        <div id="replyText" class="reply-area"></div>
         <div id="replyText2" class="reply-area"></div>
         <div id="replyText3" class="reply-area"></div>
         <div id="replyText4" class="reply-area"></div>
+      </div>
+      <div
+        id="replyshowFAQ"
+        class="reply-area"
+        style="
+          font-size: 16px;
+          line-height: 1.8;
+          margin-top: 10px;
+          color: #333366;
+          background-color: aliceblue;
+        "
+      ></div>
 
+      <!-- <p style="font-size: 16px; line-height: 1.8; margin-top: 10px; color: #333366; background-color: aliceblue;">*Quý khách có thể tham khảo cách nộp lại đơn qua bài viết dưới đây</p> -->
+      <div
+        style="margin: 10px 0 20px 20px"
+        id="replyTextFAQ1"
+        class="reply-area"
+      ></div>
+
+      <p style="font-size: 16px; line-height: 1.5; color: #333">
+        Nếu quý khách có thêm câu hỏi hoặc cần sự hỗ trợ, đừng ngần ngại
+        <a href="mailto:support@gigabank.jp"
+          >liên hệ với chúng tôi qua email này</a
+        >
+        hoặc phần <strong class="reason"> Chat để nhận hỗ trợ</strong> trong ứng
+        dụng.
+      </p>
+
+      <p
+        style="
+          font-size: 16px;
+          line-height: 1.5;
+          color: #333;
+          font-weight: bold;
+        "
+      >
+        Trân trọng,
+      </p>
+
+      <p style="font-size: 16px; line-height: 1.5; color: #333">
+        GIG-A- Đội ngũ chăm sóc khách hàng
+      </p>
     </div>
-    <p style="font-size: 16px; line-height: 1.5; font-weight: bold;color: #333;">Quý khách có thể tham khảo cách nộp lại đơn qua bài viết dưới đây</p>
-    <div id="replyTextFAQ1" class="reply-area"></div>
-
-        <p style="font-size: 16px; line-height: 1.5; color: #333;">Nếu quý khách có thêm câu hỏi hoặc cần sự hỗ trợ, đừng ngần ngại <a href="mailto:support@gigabank.jp">liên hệ với chúng tôi qua email này</a> hoặc phần <strong class="reason"> Chat để nhận hỗ trợ</strong> trong ứng dụng.</p>
-
-        <p style="font-size: 16px; line-height: 1.5; color: #333; font-weight: bold;">
-            Trân trọng,
-        </p>
-
-        <p style="font-size: 16px; line-height: 1.5; color: #333;">
-            GIG-A- Đội ngũ chăm sóc khách hàng
-        </p>
-    </div>
-</body>
-<script src="script.js"></script>
+  </body>
+  <script src="script.js"></script>
 </html>
