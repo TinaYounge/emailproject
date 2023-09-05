@@ -1,6 +1,6 @@
-/* body {
+body {
     font-family: Arial, sans-serif;
-} */
+}
 .email-item {
     border: 1px solid #ccc;
     padding: 20px;
@@ -31,11 +31,20 @@
   }
   
   .sentence::before {
-    content: "•";
+    /* content: "•";
     position: absolute;
     left: 0;
-    top: 0;
+    top: 0; */
     margin-left: -1.5em; /* Adjust the position */
+  }
+
+  .custom-list {
+    padding-left: 20px;
+  }
+  
+  .list-item::before {
+    content: "• ";
+    padding-right: 5px;
   }
   
   
