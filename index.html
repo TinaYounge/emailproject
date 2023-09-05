@@ -121,9 +121,18 @@
         <label for="customerNote1">Customer Note:</label>
         <input type="text" id="customerNote1" placeholder="Enter Customer Note 1">
         <br/>
+        <label for="faq1">Faq1:</label>
+        <select id="faq1">
+            
+            <option value="howDoIChangeTheGIGAAppLanguage">How do I change the GIG-A app language</option>
+            <option value="howDoTakeFacePicture">How do take face picture </option>
+            <option value="takingPhotosForTheIdentityVerificationProcess">Taking photos for the identity verification process</option>
+            <option value="inputDddressInTheGIGAAp">How to input my address in the GIG-A app?</option>
+
+        </select>
        
-       
-        
+        <br/>
+
         <button onclick="generateReply()">Generate Reply</button>
         <h2 style="color: #4c1fa6; font-size: 24px; margin-bottom: 10px">Subject: GIG-A Cập Nhật Thông Tin Đơn Đăng Ký</h2>
         <br/>
@@ -137,9 +146,8 @@
         <div id="replyText4" class="reply-area"></div>
 
     </div>
-    <p style="font-size: 16px; line-height: 1.5; color: #333;">Quý khách có thể tham khảo cách nộp lại đơn qua bài viết dưới đây</p>
-
-
+    <p style="font-size: 16px; line-height: 1.5; font-weight: bold;color: #333;">Quý khách có thể tham khảo cách nộp lại đơn qua bài viết dưới đây</p>
+    <div id="replyTextFAQ1" class="reply-area"></div>
 
         <p style="font-size: 16px; line-height: 1.5; color: #333;">Nếu quý khách có thêm câu hỏi hoặc cần sự hỗ trợ, đừng ngần ngại <a href="mailto:support@gigabank.jp">liên hệ với chúng tôi qua email này</a> hoặc phần <strong class="reason"> Chat để nhận hỗ trợ</strong> trong ứng dụng.</p>
 

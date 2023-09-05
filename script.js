@@ -40,38 +40,26 @@ const languageReplies = {
             <p>
             </p>
         `,
-    scanID: `
-        <p ><strong> - Ảnh thẻ cư trú đã cung cấp không đủ rõ ràng.</strong></p>
-    `,
-    general: `
-            <h2>Dear {name},</h2>
-            <p><strong>Thank you</strong> for reaching out to us. We have received your inquiry and will get back to you within 24 hours.</p>
-            <p>Best Regards,</p>
-            <p>Customer Service Team</p>
-        `,
-  },
+        howDoIChangeTheGIGAAppLanguage: "<p>-Thay đổi ngôn ngữ: <a href='https://intercom.help/gigabank/en/articles/6740402' style='color: #007bff; text-decoration: none;' target='_blank' rel='noopener noreferrer'>[Hướng dẫn thay đổi ngôn ngữ của app sang tiếng Việt]</a></p>",
+        howDoTakeFacePicture: "<p>-Chụp ảnh khuôn mặt <a href='https://intercom.help/gigabank/vi/articles/6714154' style='color: #007bff; text-decoration: none;' target='_blank' rel='noopener noreferrer'>[Hướng dẫn chụp ảnh khuôn mặt]</a></p>",
+        takingPhotosForTheIdentityVerificationProcess: "<p>-Cập nhật lại ảnh chụp để xác minh danh tính <a href='https://intercom.help/gigabank/vi/articles/7002469' style='color: #007bff; text-decoration: none;' target='_blank' rel='noopener noreferrer'>[Cách chụp ảnh thẻ ]</a></p>",
+        inputDddressInTheGIGAAp: "<p>-Địa chỉ tại cung cấp trên ứng dụng phải giống hệt như địa chỉ trên thẻ cư trú. <a href='https://intercom.help/gigabank/vi/articles/6796052' style='color: #007bff; text-decoration: none;' target='_blank' rel='noopener noreferrer'>[Cách điền địa chỉ tại Nhật bản vào GIG-A app.]</a></p>"
+      },
+      en: {
+        residentCard6MonthsExpired: "<h2>GIG-A Update - Residency Card Expires in Less Than 6 Months</h2><p><strong>Thank you</strong> for reaching out to us. We have received your inquiry and will get back to you within 24 hours.</p><p>Best Regards,</p><p>Customer Service Team</p>"
+      }
+    };
 
-  en: {
-    residentCard6MonthsExpired: `
-        <h2>    GIG-A Update - Residency Card Expires in Less Than 6 Months</h2>
-        <p><strong>Thank you</strong> for reaching out to us. We have received your inquiry and will get back to you within 24 hours.</p>
-        <p>Best Regards,</p>
-        <p>Customer Service Team</p>
-    `,
-  },
-  fr: {
-    // ... (French version)
-  },
-};
 
 function generateReply() {
   const customerNote1 = document.getElementById("customerNote1").value;
   const issueType = document.getElementById("issueType").value;
   const issueType2 = document.getElementById("issueType2").value;
+  
   const issueType3 = document.getElementById("issueType3").value;
   const issueType4 = document.getElementById("issueType4").value;
+  const faq1 = document.getElementById("faq1").value;
 
-  console.log("first", issueType);
   const language = document.getElementById("language").value;
   let replyText = "";
   let replyText2 = "";
@@ -83,11 +71,15 @@ function generateReply() {
   const template2 = languageReplies[language][issueType2];
   const template3 = languageReplies[language][issueType3];
   const template4 = languageReplies[language][issueType4];
+  const templatefaq1 = languageReplies[language][faq1];
+
 
   replyText = template.replace("{name}", customerNote1);
   replyText2 = template2;
   replyText3 = template3;
   replyText4 = template4;
+  replyTextFAQ1 = templatefaq1;
+
 
 
   // }
@@ -96,5 +88,6 @@ function generateReply() {
   document.getElementById("replyText2").innerHTML = replyText2; // Changed to innerHTML to support HTML tags
   document.getElementById("replyText3").innerHTML = replyText3; // Changed to innerHTML to support HTML tags
   document.getElementById("replyText4").innerHTML = replyText4; // Changed to innerHTML to support HTML tags
+  document.getElementById("replyTextFAQ1").innerHTML = replyTextFAQ1; // Changed to innerHTML to support HTML tags
 
 }
