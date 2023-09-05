@@ -100,6 +100,18 @@ function generateReply() {
   switch(emailType) {
     case "reApply":
       replyemailType = "Subject: GIG-A Cập Nhật Thông Tin Đơn Đăng Ký";
+      emailBody = `
+      <p>
+        Cảm ơn quý khách đã sử dụng dịch vụ của
+        <a
+          href="https://gigabank.jp/"
+          target='_blank'
+          style="color: #4c1fa6; text-decoration: none; font-weight: bold"
+        >GIG-A</a>.
+        Chúng tôi đã nhận được đơn đăng ký của quý khách, tuy nhiên chúng tôi
+        cần quý khách nộp lại đơn do:
+        </p>
+    `
       break;
     case "congratHowToActiveGIG-AApp":
       replyemailType = "Subject: GIG-A- Chúc Mừng và Thông Báo Kích Hoạt Tài khoản      ";
@@ -109,6 +121,17 @@ function generateReply() {
       break;
       case "not6Months":
       replyemailType = "Subject: GIG-A Cập nhật- Thẻ cư trú dưới 6 tháng hết hạn";
+      emailBody = `
+      <p>
+        Cảm ơn quý khách đã sử dụng dịch vụ của
+        <a
+          href="https://gigabank.jp/"
+          target='_blank'
+          style="color: #4c1fa6; text-decoration: none; font-weight: bold"
+        >GIG-A</a>.
+        Chúng tôi đã nhận được đơn đăng ký của quý khách, nhưng thẻ cư trú của quý khách còn hạn dưới 6 tháng. Quý khách vui lòng gia hạn thẻ cư trú mới khi tạo tài khoản
+      </p>
+    `;
       break;
       case "noOpen":
         replyemailType = "Subject: noOpen";
@@ -139,6 +162,7 @@ function generateReply() {
 
   document.getElementById("replyshowFAQ").innerHTML = replyshowFAQ; // Changed to innerHTML to support HTML tags
   document.getElementById("replyemailType").innerHTML = replyemailType; // Changed to innerHTML to support HTML tags
+  document.getElementById("emailBody").innerHTML = emailBody; // Changed to innerHTML to support HTML tags
 
   document.getElementById("replyText").innerHTML = replyText; // Changed to innerHTML to support HTML tags
   document.getElementById("replyText2").innerHTML = replyText2; // Changed to innerHTML to support HTML tags
