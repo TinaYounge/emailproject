@@ -84,7 +84,7 @@ function generateReply() {
     replyshowFAQ = "";
   } else {
     replyshowFAQ =
-      "*Quý khách có thể tham khảo cách nộp lại đơn qua bài viết dưới đây";
+      "*Quý khách có thể tham khảo qua bài viết dưới đây";
   }
 
   // if (emailType === "reApply") {
@@ -115,6 +115,73 @@ function generateReply() {
       break;
     case "congratHowToActiveGIG-AApp":
       replyemailType = "Subject: GIG-A- Chúc Mừng và Thông Báo Kích Hoạt Tài khoản      ";
+      emailBody = `
+      
+    
+    <div >
+        <p>Cảm ơn Quý khách đã tham gia và đăng ký dịch vụ của GIG-A. <strong style="color: green;">Chúng tôi rất vui thông báo rằng đơn đăng ký của Quý khách đã được xử lý và chấp nhận thành công.</strong></p>
+
+        <h3 style="color: #4c1fa6;           font-size: 20px;
+        ">Hướng dẫn Kích Hoạt Tài Khoản</h3>
+        <p>Để hoàn tất quá trình này và sử dụng dịch vụ, Quý khách vui lòng kích hoạt tài khoản theo hướng dẫn sau:</p>
+        <ul style="list-style-type: disc; padding-left: 20px;">
+            <li><a
+            href="https://intercom.help/gigabank/vi/articles/7992209"
+            target='_blank'
+            style=" text-decoration: none"
+          >[Hướng dẫn chi tiết về kích hoạt tài khoản] </a></li>
+            <li><a
+            href="        https://intercom.help/gigabank/vi/articles/6740402
+            "
+            target='_blank'
+            style=" text-decoration: none"
+          >[Cách chuyển ngôn ngữ sang Tiếng Việt trên ứng dụng] </a></li>
+            </ul>
+        <h3 style="color: #4c1fa6;           font-size: 20px;
+        ">Hướng dẫn Nạp Tiền và Chuyển Khoản</h3>
+        <ul style="list-style-type: disc; padding-left: 20px;">
+            <li><strong style="color: #4c1fa6;">Nạp Tiền Miễn Phí:</strong> <a
+            href="https://intercom.help/gigabank/vi/articles/7992209"
+            target='_blank'
+            style=" text-decoration: none"
+          >[Hướng dẫn chi tiết về cách nạp tiền vào tài khoản] </a></li>
+            <li><strong style="color: #4c1fa6;">Chuyển Khoản Miễn Phí:</strong> 
+            <a
+            href="https://intercom.help/gigabank/vi/articles/7992209"
+            target='_blank'
+            style=" text-decoration: none"
+          >[Hướng dẫn chi tiết về cách chuyển khoản]. </a>
+            Vui lòng lưu ý rằng:</li>
+                <ul style="list-style-type: disc; padding-left: 40px;">
+                    <li>Các giao dịch thực hiện sau 3 giờ chiều sẽ được xử lý vào lúc 9-10 giờ sáng ngày làm việc hôm sau.</li>
+                    <li>Các giao dịch thực hiện từ 9 giờ sáng đến 3 giờ chiều sẽ được xử lý vào lúc 3 giờ chiều cùng ngày.</li>
+                </ul>
+            <li><strong style="color: #4c1fa6;">Tính năng chuyển khoản ngay lập tức</strong> đang trong quá trình phát triển và sẽ sớm có trong tương lai.</li>
+        </ul>
+
+        <h3 style="color: #4c1fa6;  font-size: 20px;">Nhận mã PIN và Thẻ</h3>
+        <ul>
+        <li> Quý khách có thể đặt và nhận mã PIN <a
+        href="        https://intercom.help/gigabank/vi/articles/7337955
+        "
+        target='_blank'
+        style=" text-decoration: none"
+      >[hướng dẫn chi tiết nhận mã PIN]. </a> trong 3-5 ngày làm việc sau khi kích hoạt thành công. Vui lòng kiểm tra hòm thư
+</li>
+<li> Thẻ rút tiền mặt sẽ được gửi từ 7-10 ngày làm việc sau khi kích hoạt thành công
+</li>
+<li> Thẻ rút tiền mặt chỉ hỗ trợ và miễn phí tại 26000 cây ATM Seven Bank và Kiraboshi Bank.  <a
+href="        https://intercom.help/gigabank/vi/articles/6743838
+"
+target='_blank'
+style=" text-decoration: none"
+>[hướng dẫn chi tiết Chi tiết hạn mức rút]. </a>
+</li>
+        </ul>
+    </div>
+  
+
+    `;
       break;
     case "congratHowToUseGIG-AApp":
       replyemailType = "Subject: congratHowToUseGIG-AApp";
@@ -134,7 +201,17 @@ function generateReply() {
     `;
       break;
       case "noOpen":
-        replyemailType = "Subject: noOpen";
+        replyemailType = "Subject: GIG-A Xin lỗi vì không thể hỗ trợ mở tài khoản ngân hàng";
+        emailBody = `
+          Chúng tôi xin lỗi vì không thể hỗ trợ quý khách mở tài khoản ngân hàng.
+          </p>          <p>
+
+Chúng tôi rất tiếc vì sự bất tiện này và xin chân thành cảm ơn sự quan tâm của quý khách. Đồng thời, chúng tôi cam kết nỗ lực để nâng cao dịch vụ và mở rộng phạm vi hỗ trợ trong tương lai.
+
+</p>
+Chúng tôi xin lỗi và rất trân trọng sự khoan dung của quý khách.
+        </p>
+      `;
         break;
     default:
       replyemailType = "Please choose Email Type";
