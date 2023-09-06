@@ -35,11 +35,14 @@
       <select id="emailType">
         <option value="reApply">ReApply</option>
 
-        <option value="congratHowToUseGIG-AApp">Congrat & How to Use GIG-A app</option>
-        <option value="congratHowToActiveGIG-AApp">Congrat & How to Active GIG-A app</option>
+        <option value="congratHowToUseGIG-AApp">
+          Congrat & How to Use GIG-A app
+        </option>
+        <option value="congratHowToActiveGIG-AApp">
+          Congrat & How to Active GIG-A app
+        </option>
         <option value="not6Months">Not enought 6 month</option>
         <option value="noOpen">No Support Open</option>
-
       </select>
       <br />
       <label for="issueType">Issue Type:</label>
@@ -257,23 +260,39 @@
         Subject: GIG-A Cập Nhật Thông Tin Đơn Đăng Ký
       </h2> -->
       <h2
-      id="replyemailType"
-      class="reply-area"
-      style="color: #4c1fa6; font-size: 24px; margin-bottom: 10px"
-    ></h2>
+        id="replyemailType"
+        class="reply-area"
+        style="color: #4c1fa6; font-size: 24px; margin-bottom: 10px"
+      ></h2>
       <br />
       <!-- <h1 style="color: #4c1fa6; font-size: 24px; margin-bottom: 10px">
         Kính chào quý khách,
       </h1> -->
-      <div style="max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ccc; background-color: #f1ebfe;">
-        <div style="background-color: #4c1fa6; color: white; padding: 10px; text-align: center;">
-            <h2 style="font-size: 24px; margin: 0; color: white;">Kính chào Quý khách hàng thân mến,</h2>
+      <div
+        style="
+          max-width: 600px;
+          margin: auto;
+          padding: 20px;
+          border: 1px solid #ccc;
+          background-color: #f1ebfe;
+        "
+      >
+        <div
+          style="
+            background-color: #4c1fa6;
+            color: white;
+            padding: 10px;
+            text-align: center;
+          "
+        >
+          <h2 style="font-size: 24px; margin: 0; color: white">
+            Kính chào Quý khách hàng thân mến,
+          </h2>
         </div>
-        <div style="padding: 10px;">
+        <div style="padding: 10px">
+          <p id="emailBody" class="reply-area"></p>
 
-        <p id="emailBody" class="reply-area"></p>
-
-      <!-- <p>
+          <!-- <p>
         Cảm ơn quý khách đã sử dụng dịch vụ của
         <a
           href="https://gigabank.jp/"
@@ -282,72 +301,82 @@
         >. Chúng tôi đã nhận được đơn đăng ký của quý khách, tuy nhiên chúng tôi
         cần quý khách nộp lại đơn do:
       </p> -->
-      <div
-        style="
-          margin: 10px 0 20px 20px;
-          font-size: 16px;
-          line-height: 1.5;
-          color: #333;
-        "
-      >
-        <div id="replyText" class="reply-area"></div>
-        <div id="replyText2" class="reply-area"></div>
-        <div id="replyText3" class="reply-area"></div>
-        <div id="replyText4" class="reply-area"></div>
-      </div>
-      <h3
-        id="replyshowFAQ"
-        class="reply-area"
-        style="
-          font-size: 20px;
-          line-height: 1.8;
-          margin-top: 10px;
-          color: #333366;
-        "
-      ></h3>
+          <div
+            style="
+              margin: 10px 0 20px 20px;
+              font-size: 16px;
+              line-height: 1.5;
+              color: #333;
+            "
+          >
+            <div id="replyText" class="reply-area"></div>
+            <div id="replyText2" class="reply-area"></div>
+            <div id="replyText3" class="reply-area"></div>
+            <div id="replyText4" class="reply-area"></div>
+          </div>
+          <h3
+            id="replyshowFAQ"
+            class="reply-area"
+            style="
+              font-size: 20px;
+              line-height: 1.8;
+              margin-top: 10px;
+              color: #333366;
+            "
+          ></h3>
 
-      <!-- <p style="font-size: 16px; line-height: 1.8; margin-top: 10px; color: #333366; background-color: aliceblue;">*Quý khách có thể tham khảo cách nộp lại đơn qua bài viết dưới đây</p> -->
-      <div
-        style="margin: 10px 0 20px 20px"
-        id="replyTextFAQ1"
-        class="reply-area"
-      ></div>
-      <div
-      style="margin: 10px 0 20px 20px"
-      id="replyTextFAQ2"
-      class="reply-area"
-    ></div>
-    <div
-    style="margin: 10px 0 20px 20px"
-    id="replyTextFAQ3"
-    class="reply-area"
-  ></div>
+          <!-- <p style="font-size: 16px; line-height: 1.8; margin-top: 10px; color: #333366; background-color: aliceblue;">*Quý khách có thể tham khảo cách nộp lại đơn qua bài viết dưới đây</p> -->
+          <div
+            style="margin: 10px 0 20px 20px"
+            id="replyTextFAQ1"
+            class="reply-area"
+          ></div>
+          <div
+            style="margin: 10px 0 20px 20px"
+            id="replyTextFAQ2"
+            class="reply-area"
+          ></div>
+          <div
+            style="margin: 10px 0 20px 20px"
+            id="replyTextFAQ3"
+            class="reply-area"
+          ></div>
 
-      <p style="font-size: 16px; line-height: 1.5; color: #333">
-        Nếu quý khách có thêm câu hỏi hoặc cần sự hỗ trợ, đừng ngần ngại
-        <a href="mailto:support@gigabank.jp"
-          >liên hệ với chúng tôi qua email này</a
+          <p style="font-size: 16px; line-height: 1.5; color: #333">
+            Nếu quý khách có thêm câu hỏi hoặc cần sự hỗ trợ, đừng ngần ngại
+            <a href="mailto:support@gigabank.jp"
+              >liên hệ với chúng tôi qua email này</a
+            >
+            hoặc phần <strong class="reason"> Chat để nhận hỗ trợ</strong> trong
+            ứng dụng.
+            <a
+              href="        https://intercom.help/gigabank/vi/articles/6740402
+        "
+              target="_blank"
+              style="text-decoration: none"
+              >[Cách chuyển ngôn ngữ sang Tiếng Việt trên ứng dụng]
+            </a>
+          </p>
+        </div>
+
+        <div
+          style="background-color: #ffb03b; padding: 10px; text-align: center"
         >
-        hoặc phần <strong class="reason"> Chat để nhận hỗ trợ</strong> trong ứng
-        dụng.
-      </p>
-    </div>
-
-      <div style="background-color: #ffb03b; padding: 10px; text-align: center;">
-        <p  style="
-        font-size: 16px;
-        line-height: 1.5;
-        font-weight: bold;
-      ">Trân trọng,<br ><span style="font-size: 16px; line-height: 2.0 ;color: #4c1fa6; ">GIG-A</span>
-      <br>
-      <a
-          href="https://gigabank.jp/"
-          target='_blank'
-          style="text-decoration: none; font-weight: bold"
-        >FAQs | Những câu hỏi thường gặp</a>
-      </p>
-    </div>
-      <!-- <p
+          <p style="font-size: 16px; line-height: 1.5; font-weight: bold">
+            Trân trọng,<br /><span
+              style="font-size: 16px; line-height: 2; color: #4c1fa6"
+              >GIG-A</span
+            >
+            <br />
+            <a
+              href="https://gigabank.jp/"
+              target="_blank"
+              style="text-decoration: none; font-weight: bold"
+              >FAQs | Những câu hỏi thường gặp</a
+            >
+          </p>
+        </div>
+        <!-- <p
         style="
           font-size: 16px;
           line-height: 1.5;
@@ -358,12 +387,11 @@
         Trân trọng,
       </p> -->
 
-      <!-- <p style="font-size: 16px; line-height: 1.5; color: #333">
+        <!-- <p style="font-size: 16px; line-height: 1.5; color: #333">
         GIG-A- Đội ngũ chăm sóc khách hàng
       </p> -->
+      </div>
     </div>
-  </div>
-
   </body>
   <script src="script.js"></script>
 </html>
