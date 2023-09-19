@@ -108,7 +108,7 @@ function generateReply() {
           style="color: #4c1fa6; text-decoration: none; font-weight: bold"
         >GIG-A</a>.
         Chúng tôi đã nhận được đơn đăng ký của quý khách, tuy nhiên chúng tôi
-        cần quý khách nộp lại đơn do:
+        cần quý khách nộp lại trên ứng dụng đơn do:
         </p>
     `;
       break;
@@ -141,13 +141,13 @@ function generateReply() {
         ">Hướng dẫn Nạp Tiền và Chuyển Khoản</h3>
         <ul style="list-style-type: disc; padding-left: 20px;">
             <li><strong style="color: #4c1fa6;">Nạp Tiền Miễn Phí:</strong> <a
-            href="https://intercom.help/gigabank/vi/articles/7992209"
+            href="https://intercom.help/gigabank/vi/articles/8060988"
             target='_blank'
             style=" text-decoration: none"
           >[Hướng dẫn chi tiết về cách nạp tiền vào tài khoản] </a></li>
             <li><strong style="color: #4c1fa6;">Chuyển Khoản Miễn Phí:</strong> 
             <a
-            href="https://intercom.help/gigabank/vi/articles/7992209"
+            href="https://intercom.help/gigabank/vi/articles/8056872"
             target='_blank'
             style=" text-decoration: none"
           >[Hướng dẫn chi tiết về cách chuyển khoản]. </a>
@@ -197,13 +197,13 @@ style=" text-decoration: none"
           ">Hướng dẫn Nạp Tiền và Chuyển Khoản</h3>
           <ul style="list-style-type: disc; padding-left: 20px;">
               <li><strong style="color: #4c1fa6;">Nạp Tiền Miễn Phí:</strong> <a
-              href="https://intercom.help/gigabank/vi/articles/7992209"
+              href="https://intercom.help/gigabank/vi/articles/8060988"
               target='_blank'
               style=" text-decoration: none"
             >[Hướng dẫn chi tiết về cách nạp tiền vào tài khoản] </a></li>
               <li><strong style="color: #4c1fa6;">Chuyển Khoản Miễn Phí:</strong> 
               <a
-              href="https://intercom.help/gigabank/vi/articles/7992209"
+              href="https://intercom.help/gigabank/vi/articles/8056872"
               target='_blank'
               style=" text-decoration: none"
             >[Hướng dẫn chi tiết về cách chuyển khoản]. </a>
