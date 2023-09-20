@@ -119,11 +119,11 @@ function generateReply() {
       
     
     <div >
-        <p>Cảm ơn Quý khách đã tham gia và đăng ký dịch vụ của GIG-A. <strong style="color: green;">Chúng tôi rất vui thông báo rằng đơn đăng ký của Quý khách đã được xử lý và chấp nhận thành công.</strong></p>
+        <p>Cảm ơn Quý khách đã tham gia và đăng ký dịch vụ của GIG-A. Chúng tôi rất vui thông báo rằng đơn đăng ký của Quý khách đã được xử lý và chấp nhận thành công.</p>
 
-        <h3 style="color: #4c1fa6;           font-size: 20px;
+        <h3 style="         font-size: 20px;
         ">Hướng dẫn Kích Hoạt Tài Khoản</h3>
-        <p>Để hoàn tất quá trình này và sử dụng dịch vụ, Quý khách vui lòng kích hoạt tài khoản theo hướng dẫn sau:</p>
+        <p>Để hoàn tất quá trình này và sử dụng dịch vụ, Quý khách vui lòng kích hoạt tài khoản theo hướng dẫn sau và bắt đầu có thể giao dịch:</p>
         <ul style="list-style-type: disc; padding-left: 20px;">
             <li><a
             href="https://intercom.help/gigabank/vi/articles/7992209"
@@ -137,47 +137,26 @@ function generateReply() {
             style=" text-decoration: none"
           >[Cách chuyển ngôn ngữ sang Tiếng Việt trên ứng dụng] </a></li>
             </ul>
-        <h3 style="color: #4c1fa6;           font-size: 20px;
-        ">Hướng dẫn Nạp Tiền và Chuyển Khoản</h3>
+        <h3 style="         font-size: 20px;
+        ">Quý khách có thể đọc thêm những bài viết sau khi kích hoạt thành công
+        </h3>
         <ul style="list-style-type: disc; padding-left: 20px;">
-            <li><strong style="color: #4c1fa6;">Nạp Tiền Miễn Phí:</strong> <a
-            href="https://intercom.help/gigabank/vi/articles/8060988"
+            <li> <a
+            href="https://help.gigabank.jp/vi/articles/8366053"
             target='_blank'
             style=" text-decoration: none"
-          >[Hướng dẫn chi tiết về cách nạp tiền vào tài khoản] </a></li>
-            <li><strong style="color: #4c1fa6;">Chuyển Khoản Miễn Phí:</strong> 
+          >[Hướng dẫn Nạp tiền và Chuyển khoản] </a></li>
+            <li>
             <a
-            href="https://intercom.help/gigabank/vi/articles/8056872"
+            href="https://help.gigabank.jp/vi/articles/8366096"
             target='_blank'
             style=" text-decoration: none"
-          >[Hướng dẫn chi tiết về cách chuyển khoản]. </a>
-            Vui lòng lưu ý rằng:</li>
-                <ul style="list-style-type: disc; padding-left: 40px;">
-                    <li>Các giao dịch thực hiện sau 3 giờ chiều sẽ được xử lý vào lúc 9-10 giờ sáng ngày làm việc hôm sau.</li>
-                    <li>Các giao dịch thực hiện từ 9 giờ sáng đến 3 giờ chiều sẽ được xử lý vào lúc 3 giờ chiều cùng ngày.</li>
-                </ul>
-            <li><strong style="color: #4c1fa6;">Tính năng chuyển khoản ngay lập tức</strong> đang trong quá trình phát triển và sẽ sớm có trong tương lai.</li>
+          >[Hướng dẫn nhận Mã PIN và Thẻ]. </a>
+          </li>
+               
         </ul>
 
-        <h3 style="color: #4c1fa6;  font-size: 20px;">Nhận mã PIN và Thẻ</h3>
-        <ul>
-        <li> Quý khách có thể đặt và nhận mã PIN <a
-        href="        https://intercom.help/gigabank/vi/articles/7337955
-        "
-        target='_blank'
-        style=" text-decoration: none"
-      >[hướng dẫn chi tiết nhận mã PIN]. </a> trong 3-5 ngày làm việc sau khi kích hoạt thành công. Vui lòng kiểm tra hòm thư
-</li>
-<li> Thẻ rút tiền mặt sẽ được gửi từ 7-10 ngày làm việc sau khi kích hoạt thành công
-</li>
-<li> Thẻ rút tiền mặt chỉ hỗ trợ và miễn phí tại 26000 cây ATM Seven Bank và Kiraboshi Bank.  <a
-href="        https://intercom.help/gigabank/vi/articles/6743838
-"
-target='_blank'
-style=" text-decoration: none"
->[hướng dẫn chi tiết Chi tiết hạn mức rút]. </a>
-</li>
-        </ul>
+        
     </div>
   
 
@@ -189,33 +168,33 @@ style=" text-decoration: none"
       
     
       <div >
-          <p>Cảm ơn Quý khách đã tham gia và đăng ký dịch vụ của GIG-A. <strong style="color: green;">Chúng tôi rất vui thông báo rằng đơn đăng ký của Quý khách đã được xử lý và chấp nhận thành công.</strong></p>
+          <p>Cảm ơn Quý khách đã tham gia và đăng ký dịch vụ của GIG-A. Chúng tôi rất vui thông báo rằng đơn đăng ký của Quý khách đã được xử lý và chấp nhận thành công.</p>
   
           
             
-          <h3 style="color: #4c1fa6;           font-size: 20px;
+          <h3 style="          font-size: 20px;
           ">Hướng dẫn Nạp Tiền và Chuyển Khoản</h3>
           <ul style="list-style-type: disc; padding-left: 20px;">
-              <li><strong style="color: #4c1fa6;">Nạp Tiền Miễn Phí:</strong> <a
+              <li>Nạp Tiền Miễn Phí: <a
               href="https://intercom.help/gigabank/vi/articles/8060988"
               target='_blank'
               style=" text-decoration: none"
             >[Hướng dẫn chi tiết về cách nạp tiền vào tài khoản] </a></li>
-              <li><strong style="color: #4c1fa6;">Chuyển Khoản Miễn Phí:</strong> 
+              <li>Chuyển Khoản Miễn Phí:
               <a
               href="https://intercom.help/gigabank/vi/articles/8056872"
               target='_blank'
               style=" text-decoration: none"
             >[Hướng dẫn chi tiết về cách chuyển khoản]. </a>
-              Vui lòng lưu ý rằng:</li>
+              </li>
+              <p> * Vui lòng lưu ý rằng: Tính năng chuyển khoản ngay lập tức đang trong quá trình phát triển và sẽ sớm có trong tương lai cho nên</p>
                   <ul style="list-style-type: disc; padding-left: 40px;">
                       <li>Các giao dịch thực hiện sau 3 giờ chiều sẽ được xử lý vào lúc 9-10 giờ sáng ngày làm việc hôm sau.</li>
                       <li>Các giao dịch thực hiện từ 9 giờ sáng đến 3 giờ chiều sẽ được xử lý vào lúc 3 giờ chiều cùng ngày.</li>
                   </ul>
-              <li><strong style="color: #4c1fa6;">Tính năng chuyển khoản ngay lập tức</strong> đang trong quá trình phát triển và sẽ sớm có trong tương lai.</li>
           </ul>
   
-          <h3 style="color: #4c1fa6;  font-size: 20px;">Nhận mã PIN và Thẻ</h3>
+          <h3   font-size: 20px;">Nhận mã PIN và Thẻ</h3>
           <ul>
           <li> Quý khách có thể đặt và nhận mã PIN <a
           href="        https://intercom.help/gigabank/vi/articles/7337955
