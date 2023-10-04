@@ -201,9 +201,9 @@ function generateReply() {
           "
           target='_blank'
           style=" text-decoration: none"
-        >[hướng dẫn chi tiết nhận mã PIN]. </a> trong 3-5 ngày làm việc sau khi kích hoạt thành công. Vui lòng kiểm tra hòm thư
+        >[hướng dẫn chi tiết nhận mã PIN]. </a> trong 7-14 ngày làm việc sau khi kích hoạt thành công. Vui lòng kiểm tra hòm thư
   </li>
-  <li> Thẻ rút tiền mặt sẽ được gửi từ 7-10 ngày làm việc sau khi kích hoạt thành công
+  <li> Thẻ rút tiền mặt sẽ được gửi từ 7-14 ngày làm việc sau khi kích hoạt thành công
   </li>
   <li> Thẻ rút tiền mặt chỉ hỗ trợ và miễn phí tại 26000 cây ATM Seven Bank và Kiraboshi Bank.  <a
   href="        https://intercom.help/gigabank/vi/articles/6743838
